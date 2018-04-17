@@ -13,7 +13,7 @@ export default new VueRouter({
     //主页
     {
       path:'/msite',
-      component:Msite,
+      component: Msite,
       meta:{
         showFooter:true
       }

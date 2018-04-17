@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer_guide">
+  <footer class="footer_guide border-1px">
     <a href="javascript:;" class="guide_item " :class="{on:'/msite' === $route.path}"
        @click="goto('/msite')">
       <span class="item_icon">
@@ -26,7 +26,7 @@
       <span class="item_icon">
         <i class="iconfont icon-face"></i>
       </span>
-      <span>我的订单</span>
+      <span>我的E宠</span>
     </a>
   </footer>
 </template>
@@ -48,10 +48,11 @@
     position fixed
     z-index 100
     left 0
+    right 0
     bottom 0
     background-color #fff
-    height 50px
     width 100%
+    height 50px
     display flex
     .guide_item
       display flex
