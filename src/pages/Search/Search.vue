@@ -1,55 +1,17 @@
 <template>
-  <div class="categoryList" style="height: 100%">
-    <!--头部-->
-    <div class="listHeader">
-      <div class="listHeader_left on">
-        <a href="##" >
-          <span>分类</span>
-        </a>
+  <div>
+    <header class="head">
+      <div class="sort on">
+        <router-link to="/search/sort">分类</router-link>
       </div>
-      <div class="listHeader_right on">
-        <a href="##">
-          <span>品牌</span>
-        </a>
-        <span class="iconfont icon-unie036"></span>
+      <div class="brand">
+        <!--<router-link to="/search/brand" replace>品牌</router-link>-->
+        <router-link to="/search/brand">品牌</router-link>
       </div>
-    </div>
-    <!--内容区-->
-    <div class="kindbox">
-      <!--左边列表区域-->
-      <div class="leftbox">
-        <ul>
-          <li class="on">为你推荐</li>
-          <li>为你推荐</li>
-        </ul>
-      </div>
-
-    </div>
+    </header>
+    <router-view/>
   </div>
- <!-- /*.kindbox
-  position relative
-  padding-top 40px
-  padding-bottom 50px
-  background bisque
-  .leftbox
-  position fixed
-  top 40px
-  left 0
-  background #ffffff
-  ul
-  li
-  box-sizing border-box
-  width 70px
-  height 50px
-  font-size 13px
-  padding 15px 0
-  text-overflow ellipsis
-  white-space nowrap
-  overflow hidden
-  text-align center
-  &.on
-  background #f3f4f5
-  color red*/-->
+  <!--https://wap.epet.com/category.html?pet_type=dog#tab1-->
 </template>
 <script>
   export default {
@@ -62,64 +24,36 @@
 </script>
 <style lang="stylus" rel="stylesheet/stylus">
 
-  .listHeader
-    position fixed
-    top 0
-    display flex
+  .head
+    background #fff
     width 100%
-    height 40px
-    background #ffffff
-    z-index 100
-    .listHeader_left
-      width 50%
-      height 40px
-      background #ffffff
-      margin 0 5px
-      &.on a span
-        color red
-        border-bottom 2px solid red
-      a
-        color #333
-        span
-          display inline-block
-          width 34px
-          height 40px
-          line-height 40px
-          margin-left 120px
-    .listHeader_right
-      width 50%
-      height 40px
-      background #ffffff
-      margin 0 5px
-      &.on a span
-        color red
-        border-bottom 2px solid red
-      a
-        color #333
-        span
-          display inline-block
-          width 34px
-          height 40px
-          line-height 40px
-          margin-left 20px
-      span
-        margin-left 100px
-
-
-
-  .kindbox
-    position relative
-    padding 40px 0 50px 0
+    padding-left 0 15px
     box-sizing border-box
-    background #bcbcbc
-    width 100%
-    height 100%
-
-
-
-
-
-
-
+    /*border-bottom 2px solid #cbcbcb*/
+    position fixed
+    left 0
+    right 0
+    top 0
+    height 40px
+    z-index 11
+    font-size 13px
+    div
+      width 48%
+      height 40px
+      line-height 40px
+      float left
+      box-sizing border-box
+      a
+        font-weight 700
+        padding 10px 5px
+        &.router-link-active
+          color #ed4044
+          border-bottom 2px solid #ed4044
+    .sort
+      text-align right
+      padding-right 5%
+    .brand
+      text-align left
+      padding-left 5%
 
 </style>

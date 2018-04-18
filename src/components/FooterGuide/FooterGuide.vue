@@ -7,7 +7,7 @@
       </span>
       <span>首页</span>
     </a>
-    <a href="javascript:;" class="guide_item" :class="{on:'/search' === $route.path}"
+    <a href="javascript:;" class="guide_item" :class="{on:'/search' === $route.path.substr(0,7)}"
        @click="goto('/search')">
       <span class="item_icon">
         <i class="iconfont icon-fenlei"></i>

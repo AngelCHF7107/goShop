@@ -1,7 +1,8 @@
 <template>
   <div style="height: 100%;box-sizing: border-box">
     <router-view></router-view>
-    <FooterGuide/>
+    <!--v-show="$route.meta.showFooter"-->
+    <FooterGuide />
   </div>
 </template>
 

@@ -3,8 +3,8 @@ import ajax from './ajax'
 //const BASE_URL = 'http://localhost:3000'
 //开发环境
 const BASE_URL = '/api'
-// [1、获取E宠主页广告列表](##获取E宠主页广告列表)<br/>
-export const reqProductListing = () => ajax(BASE_URL+'/index')
+// [1、获取E宠主页广告列表](##获取E宠主页广告列表)<br/>做了
+export const reqProductList = () => ajax(BASE_URL+'/index')
 
 // [2、获取E宠分类列表](#获取E宠分类列表)<br/>
 export const reqClassify = () => ajax(BASE_URL+'/classify')
@@ -12,7 +12,7 @@ export const reqClassify = () => ajax(BASE_URL+'/classify')
 // [3、获取E宠品牌列表](#获取E宠品牌列表)<br/>
 export const reqBrandLis = () => ajax(BASE_URL+'/brand')
 
-// [4、获取轮播图广告和每日疯抢](#获取轮播图广告和每日疯抢)<br/>
+// [4、获取轮播图广告和每日疯抢](#获取轮播图广告和每日疯抢)<br/>做了
 export const reqCarousel = () => ajax(BASE_URL+'/carousel')
 
 // [5、获取一次性验证码](#4获取一次性验证码)<br/>
