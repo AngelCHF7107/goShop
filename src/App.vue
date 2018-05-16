@@ -8,7 +8,7 @@
 
 <script>
 import FooterGuide from './components/FooterGuide/FooterGuide.vue'
-//测试git
+//测试git test
 export default {
   components:{
     FooterGuide
